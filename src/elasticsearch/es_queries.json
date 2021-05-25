@@ -1,0 +1,60 @@
+{
+    "get_common_terms": {
+        "aggs": {
+            "categories": {
+                "terms": {
+                    "field": "categories",
+                    "size": 1000
+                }
+            }
+        },
+        "size": 0
+    },
+    "get_all_regions": {
+        "aggs": {
+            "areas": {
+                "terms": {
+                    "field": "Area",
+                    "size": 200
+                }
+            }
+        },
+        "size": 0
+    },
+    "match_region_data": {
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "query_string": {
+                            "query": "*",
+                            "analyze_wildcard": true
+                        }
+                    }
+                ],
+                "filter": [],
+                "should": [],
+                "must_not": []
+            }
+        },
+        "size": 200
+    },
+    "match_all_recipes": {
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "query_string": {
+                            "query": "*",
+                            "analyze_wildcard": true
+                        }
+                    }
+                ],
+                "filter": [],
+                "should": [],
+                "must_not": []
+            }
+        },
+        "size": 200
+    }
+}

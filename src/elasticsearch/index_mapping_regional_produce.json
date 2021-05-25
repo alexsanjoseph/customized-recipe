@@ -1,0 +1,42 @@
+{
+    "mappings": {
+        "properties": {
+            "Area": {
+                "type": "keyword"
+            },
+            "Area Code": {
+                "type": "long"
+            },
+            "Domain": {
+                "type": "keyword"
+            },
+            "Domain Code": {
+                "type": "keyword"
+            },
+            "Element": {
+                "type": "keyword"
+            },
+            "Element Code": {
+                "type": "long"
+            },
+            "Item": {
+                "type": "keyword"
+            },
+            "Item Code": {
+                "type": "long"
+            },
+            "Unit": {
+                "type": "keyword"
+            },
+            "Value": {
+                "type": "long"
+            },
+            "Year": {
+                "type": "long"
+            },
+            "Year Code": {
+                "type": "long"
+            }
+        }
+    }
+}
